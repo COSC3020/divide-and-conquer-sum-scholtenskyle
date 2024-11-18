@@ -23,5 +23,11 @@ What is the runtime of the algorithm that you implemented? Provide a recurrence
 relation for $T(n)$ as we did for merge sort (you can ignore constant factors)
 and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
+Since the array is split into thirds, the equation 3T(n/3)+C is used to calculate the time. This is also because of the three recursive calls used in the program. C can be replaced with 0(1) to indicate that the program has started, otherwise the equation would not be needed. You can already see that this time grows linearly, no matter how many times it needs to run. This makes the final complexity equal to $\Theta$(n).
+
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
