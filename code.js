@@ -11,7 +11,7 @@ function divideAndConquerSum(a) {
 
     const thirdFrac = Math.floor(a.length / 3);
     const first = divideAndConquerSum(a.slice(0, thirdFrac));
-    const center = divideAndConquerSum(a.slice(split, (thirdFrac * 2)));
+    const center = divideAndConquerSum(a.slice(thirdFrac, (thirdFrac * 2)));
     const last = divideAndConquerSum(a.slice(thirdFrac * 2));
     
     return first + center + last;
